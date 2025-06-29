@@ -27,6 +27,7 @@ extern "C"
     void minisat_set_opt_clause_lim(int opt_clause_lim);
     void minisat_set_opt_subsumption_lim(int opt_subsumption_lim);
     void minisat_set_opt_simp_garbage_frac(double opt_simp_garbage_frac);
+    void minisat_set_opt_verbosity(int verb);
 
     void *minisat_new_solver();
     int minisat_new_var(void *solver);
@@ -59,7 +60,6 @@ extern "C"
     void minisat_destroy(void *solver);
     // return bool
     int minisat_okay(void *solver);
-    void minisat_set_opt_verbosity(int verb);
 #ifdef __cplusplus
 }
 #endif
