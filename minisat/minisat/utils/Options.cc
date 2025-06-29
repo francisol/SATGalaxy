@@ -59,27 +59,27 @@ void Minisat::set_opt_garbage_frac(double garbage_frac){
 void Minisat::set_opt_min_learnts_lim(int min_learnts_lim){
     opt_min_learnts_lim = min_learnts_lim;
 }
-void Minisat::set_opt_use_asymm(bool opt_use_asymm){
-    opt_use_asymm = opt_use_asymm;
+void Minisat::set_opt_use_asymm(bool use_asymm){
+    opt_use_asymm = use_asymm;
 }
-void Minisat::set_opt_use_rcheck(bool opt_use_rcheck){
-    opt_use_rcheck = opt_use_rcheck;
+void Minisat::set_opt_use_rcheck(bool use_rcheck){
+    opt_use_rcheck = use_rcheck;
 }
-void Minisat::set_opt_use_elim(bool opt_use_elim){
-    opt_use_elim = opt_use_elim;
+void Minisat::set_opt_use_elim(bool use_elim){
+    opt_use_elim = use_elim;
 }
-void Minisat::set_opt_grow(int opt_grow){
-    opt_grow = opt_grow;
+void Minisat::set_opt_grow(int grow){
+    opt_grow = grow;
 }
-void Minisat::set_opt_clause_lim(int opt_clause_lim){
-    opt_clause_lim = opt_clause_lim;
+void Minisat::set_opt_clause_lim(int clause_lim){
+    opt_clause_lim = clause_lim;
 }
-void Minisat::set_opt_subsumption_lim(int opt_subsumption_lim){
-    opt_subsumption_lim = opt_subsumption_lim;
+void Minisat::set_opt_subsumption_lim(int subsumption_lim){
+    opt_subsumption_lim = subsumption_lim;
 }
-void Minisat::set_opt_simp_garbage_frac(double opt_simp_garbage_frac){
-    opt_simp_garbage_frac = opt_simp_garbage_frac;
+void Minisat::set_opt_simp_garbage_frac(double simp_garbage_frac){
+    opt_simp_garbage_frac = simp_garbage_frac;
 }
-void Minisat::set_opt_verbosity(int opt_verbosity){
-    opt_verbosity = opt_verbosity;
+void Minisat::set_opt_verbosity(int verbosity){
+    opt_verbosity = verbosity;
 }

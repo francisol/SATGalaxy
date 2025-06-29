@@ -33,14 +33,16 @@ extern "C"
     void minisat_release_var(void *solver, int l);
     int minisat_add_clause(void *solver, const int ps[], unsigned long length);
     int minisat_add_empty_clause(void *solver); // Add the empty clause to the solver.
+    // start with 1
     int minisat_value(void *solver, int x);
+    int minisat_model_value(void *solver, int x);
 
     // Solving:
     // return as bool, do_simp and turn_off_simp as bool
     int minisat_solve_assumps(void *solver, const int assumps[],
                               unsigned long length, int do_simp,
                               int turn_off_simp);
-    //  0 for true, 1 for false, 2 for unkown 
+    //  10 for sat, 20 for unsat, 30 for unkown 
     int minisat_solve_limited(void *solver, const int assumps[],
                               unsigned long length, int do_simp,
                               int turn_off_simp );
@@ -57,6 +59,7 @@ extern "C"
     void minisat_destroy(void *solver);
     // return bool
     int minisat_okay(void *solver);
+    void minisat_set_opt_verbosity(int verb);
 #ifdef __cplusplus
 }
 #endif
